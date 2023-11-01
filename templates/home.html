@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <main class="main">
+        <form action="/" method="POST">
+            <div class="form__header">
+                <h1 class="main__header-title">Ready for a joke?</h1>
+                <p class="main__header-description">Press the button to get a Norris joke and prepare yourself not to laugh your a** off!</p>
+            </div>
+            <button class="form__button" type="submit">Click here!</button>
+        </form>
+        {% if joke %}
+        <p class="joke">{{ joke }}</p>
+        {% endif %}
+    </main>
+</body>
+</html>
